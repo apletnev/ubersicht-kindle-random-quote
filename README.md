@@ -1,6 +1,6 @@
-# Show random quote form kindle "My Clippings.txt"
+# Show random quote form Kindle's My Clippings file (My Clippings.txt)
 
-A random quote from "My clipping.txt" widget for Übersicht
+A random quote from "My Clippings.txt" widget for Übersicht
 
 Contains book name, author and quote
 
