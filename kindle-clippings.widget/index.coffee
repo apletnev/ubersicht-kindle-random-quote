@@ -1,4 +1,4 @@
-command: 'cat ~/My\ Clipping.txt | awk -f kindle-clippings.widget/parser.awk'
+command: 'cat ~/My\ Clippings.txt | awk -f kindle-clippings.widget/parser.awk'
 
 refreshFrequency: 300000
 
