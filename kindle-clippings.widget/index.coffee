@@ -1,4 +1,4 @@
-command: 'cat ~/My\ Clippings.txt | awk -f kindle-clippings.widget/parser.awk'
+command: 'cat ~/My\\ Clippings.txt | awk -f kindle-clippings.widget/parser.awk'
 
 refreshFrequency: 300000
 
@@ -106,8 +106,9 @@ wrapText: (context, text, x, y, maxWidth, lineHeight) ->
 update: (output, domEl) ->
   res = output.split('\r\n');
 
-  if res.length == 0
-    this.setClipping(res)
+  if res.length < 4
+    this.setSize()
+    this.setClipping(output.toUpperCase())
   else
     this.setSize()
     this.setAuthor(res[0].toUpperCase())
